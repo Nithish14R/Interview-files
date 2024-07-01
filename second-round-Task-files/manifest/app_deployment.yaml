@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-app-todo
+  labels:
+    app: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: pythonapp 
+        image: nithishra/python-app-todo
+        env:
+        - name: MYSQL_HOST
+          value: "10.1.2.195"          # this is your mysql's service clusture IP, Make sure to change it with yours
+        - name: MYSQL_PASSWORD
+          value: "admin"
+        - name: MYSQL_USER
+          value: "admin"
+        - name: MYSQL_DB
+          value: "mydb"
+        ports:
+        - containerPort: 5000

@@ -1,0 +1,24 @@
+1st Round Of interview Questions:
+
+1. what is cloud 
+2. what is elasticity and scalabiity
+3. what is container
+4. what is kubernetes
+
+and few more questions about cloud 
+
+
+2nd round of interview questions:
+
+
+1.what is load balancer
+2. what is cloud build
+3. different types of service like (nodePort, Loadbalancer, clusterIP)
+4.write a yaml file for Kubernetes deployment and service
+
+and few more questions related to cloud 
+
+
+and One task has been given to deploy 2 tier app using kuberentes 
+i have attached all my task files for reference
+ 
